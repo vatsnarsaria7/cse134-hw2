@@ -15,24 +15,33 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="experience.html">Experience</a></li>
-                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
-
+    <hr>
     <main>
         <section>
             <h2>Get in Touch</h2>
             <p>You can reach out to me via email or connect with me on LinkedIn and GitHub.</p>
-            <ul>
+            <ol>
                 <li>Email: <a href="mailto:vnarsaria@ucsd.edu">vnarsaria@ucsd.edu</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/vats-narsaria/"
                         target="_blank">linkedin.com/in/vats-narsaria</a></li>
                 <li>GitHub: <a href="https://github.com/vatsnarsaria7" target="_blank">github.com/vatsnarsaria7</a></li>
-            </ul>
+            </ol>
+
+            <section>
+                <details>
+                    <summary>Click to View More Contact Options</summary>
+                    <p><strong>Alternate Email:</strong> narsariavats@gmail.com</p>
+                    <p><strong>Phone:</strong>+1 858-241-1808</p>
+                </details>
+            </section>
+
         </section>
 
         <section>
@@ -48,6 +57,12 @@
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
 
                     <button type="submit">Send Message</button>
                 </fieldset>

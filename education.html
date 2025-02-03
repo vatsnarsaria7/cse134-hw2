@@ -25,9 +25,28 @@
     <hr>
     <main>
         <section>
-            <h2>University of California San Diego</h2>
+            <h2><span style="color:blue">University of California San Diego</span></h2>
             <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
             <p><strong>Expected Graduation:</strong> June 2026</p>
+            <section>
+                <h2>Degree Progress</h2>
+                <p>Visualizing my progress in completing my Computer Science degree.</p>
+                <canvas id="degreeProgress" width="300" height="30" style="border:1px solid #000;"></canvas>
+            </section>
+
+            <script>
+                var ctx = document.getElementById("degreeProgress").getContext("2d"),
+                    progress = (8 / 12) * 280; // Junior Winter: 8/12 quarters complete
+
+                ctx.fillStyle = "#ddd"; ctx.fillRect(10, 5, 280, 20); // Background bar
+                ctx.fillStyle = "blue"; ctx.fillRect(10, 5, progress, 20); // Progress bar
+                ctx.fillStyle = "black"; ctx.font = "14px Arial";
+                ctx.fillText(Math.round((progress / 280) * 100) + "% Complete", 110, 20);
+            </script>
+            <noscript>
+                <p><strong>JavaScript is disabled in your browser.</strong> Please enable JavaScript to view the degree
+                    progress visualization.</p>
+            </noscript>
             <p><strong>GPA:</strong> 3.80 / 4.00</p>
         </section>
 
